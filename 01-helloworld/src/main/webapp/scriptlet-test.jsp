@@ -7,14 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h3>Hello World</h3>
+	<jsp:include page="myheader.html" />
+	<h3>Hello World !!</h3>
 	<%
-		for(int i=1; i<=5; i++){
-			out.println("<br/> Welcome = " + i);
+		for (int i=1; i<=5; i++) {
+			out.println("<br/> Welcome - " + i);
 		}
-	
-	
 	%>
-
+	<jsp:include page="myFooter.jsp" />
 </body>
 </html>
